@@ -1,717 +1,797 @@
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
-<head>
-
-  <title>Yunhe Wang's Homepage</title>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Yunhe Wang is currently a senior researcher at Huawei Noah's Ark Lab">
-  <meta name="keywords" content="Yunhe Wang, 王云鹤, wangyunhe, Yunhe, Wang, Deep Learning, Huawei, PKU, Computer, Vision">
-  <meta name="author" content="Yunhe Wang" />
-
-  <link rel="stylesheet" href="w3.css">
-
-  <style>
-  .w3-sidebar a {font-family: "Roboto", sans-serif}
-  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-  </style>
-
-  <link rel="icon" type="image/png" href="images/icons.png">
-  <!--
-  <script src="jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  //-->
-
-</head>
-
-
-<body class="w3-content" style="max-width:1000px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>YUNHE</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#news" class="w3-bar-item w3-button">News</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
-    <a href="#publications" class="w3-bar-item w3-button">Research</a>
-    <a href="#service" class="w3-bar-item w3-button">Services</a>
-    <a href="#award" class="w3-bar-item w3-button">Awards</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">YUNHE</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:150px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-
-<!-- The Home Section -->
-    <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg">
-      <h1>Yunhe Wang</h1>
-        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc. Before that, I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
-        </p>
-        <p class="w3-center">
-          <a href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=isizOkYAAAAJ">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://www.zhihu.com/people/YunheWang"> Zhi Hu </a> &nbsp/&nbsp
-          <a href="https://dblp.org/pid/63/8217-1.html"> DBLP </a>
-        </p>
-        </tbody></table>
-  </div>
-
-<!-- The News Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="news">
-   <h2>News</h2>
-      <p><li> 05/2021, one paper has been accepted by <a href="https://icml.cc/">ICML 2021</a>.</li></p>
-      <p><li> 05/2021, I have been selected as a Senior Area Chair for <a href="http://valser.org/">VALSE 2021</a>.</li></p>
-      <p><li> 03/2021, I accepted the invitation to serve as an Area Chair for <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</li></p>
-      <p><li> 03/2021, nine papers have been accepted by <a href="http://cvpr2021.theRcvf.com/">CVPR 2021</a>.</li></p>
-      <p><li> 01/2021, I will give a talk about AdderNet at <a href="https://haet2021.github.io/speakers.html">HAET ICLR 2021 workshop</a>.</li></p>
-      <p><li> 12/2020, two papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021</a>.</li></p>
-      <p><li> 11/2020, I accepted the invitation to serve as an Area Chair for <a href="https://icml.cc/Conferences/2021">ICML 2021</a>.</li></p>
-      <p><li> 09/2020, six papers have been accepted by <a href="https://nips.cc/Conferences/2020">NeurIPS 2020</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="https://eccv2020.eu/accepted-papers/">ECCV 2020</a>.</li></p>
-      
-      <!--
-      <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
-      <p><li> 07/2020, one paper has been accepted by <a href="http://2020.acmmm.org/accepted-paper-id-list.txt">ACM MM 2020</a>.</li></p>
-      <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
-      <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
-      <p><li> 11/2019, three papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</li></p>
-      -->
-
-  </div>
-<!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Recent Projects</h2>
-    <p class="w3-justify">
-        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
-    </p>
-
-        <h4><li>Adder Neural Networks</li></h4>
-        <img style="width:96%;" src="images/AdderNet.jpg"> 
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
-        </p>
-        <p class="w3-justify">
-        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
-        </p> 
-
-        <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
-        <img style="width:96%;" src="images/GhostNet.png"> 
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://live.huawei.com/huaweiconnect/meeting/cn/5872.html">Huawei Connect (HC) 2020</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub">MindSpore Hub</a>
-        </p>
-        <p class="w3-justify">
-        The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
-        </p> 
-
-        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
-        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
-        </p>
-        <p class="w3-justify">
-        This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
-        </p>  
-
-  </div>
-  
-  <!-- The Talks Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="talks">
-    <h2>Talks</h2>
-      <p><li> 06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf">AI on the Edge - Discussion on the Gap Between Industry and Academia</a>" at <a  href="http://valser.org/"><strong>VALSE</strong></a> Webinar.</li></p>
-      <p><li> 05/2020, "<a href="https://www.bilibili.com/video/av925692420/"> Edge AI: Progress and Future Directions</a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a  href="https://www.bilibili.com/"><strong>bilibili</strong></a>.</li></p>
-  </div>
- <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32"" id="publications">
-    <h2>Research</h2>
-      <p class="w3-left-align" style="line-height:200%">
-        I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc.
-      </p>
-    <h4> Conference Papers:</h4>
-
-    <ol>
-      
-      <p>
-      <li><strong>Winograd Algorithm for AdderNet</strong>
-      <br>
-      Wenshuo Li, Hanting Chen, Mingqiang Huang, Xinghao Chen, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICML</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2105.05530.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Distilling Object Detectors via Decoupled Features</strong>
-      <br>
-      Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Wei Zhang, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2021
-      </p>
-
-      <p>
-      <li><strong>HourNAS: Extremely Fast Neural Architecture Search Through an Hourglass Lens</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Xinghao Chen, Jianyuan Guo, Wei Zhang, 
-      <br>
-      Chao Xu, Chunjing Xu, Dacheng Tao, Chang Xu  
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2005.14446.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/HourNAS-F_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Manifold Regularized Dynamic Network Pruning</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Yiping Deng, Chao Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2103.05861.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/manidp_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Learning Student Networks in the Wild</strong>
-      <br>
-      Hanting Chen, Tianyu Guo, Chang Xu, Wenshuo Li, Chunjing Xu, Chao Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 
-      </p>
-
-      <p>
-      <li><strong>AdderSR: Towards Energy Efficient Image Super-Resolution</strong>
-      <br>
-      Dehua Song*, <strong>Yunhe Wang</strong>*, Hanting Chen, Chang Xu, Chunjing Xu, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2021 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.08891.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
-      </p>
-
-      <p>
-      <li><strong>ReNAS: Relativistic Evaluation of Neural Architecture Search</strong>
-      <br>
-      Yixing Xu, <strong>Yunhe Wang</strong>, Kai Han, Yehui Tang, Shangling Jui, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1910.01523.pdf">paper</a> | <span style="color:red"> Oral Presentation</span> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/renas_v1.0_cifar10">MindSpore code</a>
-      </p>
-
-      <p>
-      <li><strong>Pre-Trained Image Processing Transformer</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Tianyu Guo, Chang Xu, Yiping Deng, Zhenhua Liu, 
-      <br>
-      Siwei Ma, Chunjing Xu, Chao Xu, Wen Gao
-      <br>
-      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.00364.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Pretrained-IPT">Pytorch code</a>
-      </p>
-
-      <p>
-      <li><strong>Data-Free Knowledge Distillation For Image Super-Resolution</strong>
-      <br>
-      Yiman Zhang, Hanting Chen, Xinghao Chen, Yiping Deng, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 
-      </p>
-
-      <p>
-      <li><strong>Positive-Unlabeled Data Purification in the Wild for Object Detection</strong>
-      <br>
-      Jianyuan Guo, Kai Han, Han Wu, Xinghao Chen, Chao Zhang, Chunjing Xu, Chang Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>CVPR</em> 2021 
-      </p>
-
-      <p>
-      <li><strong>One-shot Graph Neural Architecture Search with Dynamic Search Space</strong>
-      <br>
-      Yanxi Li, Zean Wen, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>AAAI</em> 2021 
-      </p>
-
-      <p>
-      <li><strong>Adversarial Robustness through Disentangled Representations</strong>
-      <br>
-      Shuo Yang, Tianyu Guo, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>AAAI</em> 2021 
-      </p>
-
-      <p>
-      <li><strong>Kernel Based Progressive Distillation for Adder Neural Networks</strong>
-      <br>
-      Yixing Xu, Chang Xu, Xinghao Chen, Wei Zhang, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.13044.pdf">paper</a> | <span style="color:red"> Spotlight</span> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a>
-      </p>
-
-      <p>
-      <li><strong>Model Rubik's Cube: Twisting Resolution, Depth and Width for TinyNets</strong>
-      <br>
-      Kai Han*, <strong>Yunhe Wang</strong>*, Qiulin Zhang, Wei Zhang, Chunjing Xu, Tong Zhang
-      <br>
-      <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.14819.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Residual Distillation: Towards Portable Deep Neural Networks without Shortcuts</strong>
-      <br>
-      Guilin Li*, Junlei Zhang*, <strong>Yunhe Wang</strong>, Chuanjian Liu, Matthias Tan, Yunfeng Lin,
-      <br>
-      Wei Zhang, Jiashi Feng, Tong Zhang
-      <br>
-      <em>NeurIPS</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://proceedings.neurips.cc/paper/2020/file/657b96f0592803e25a4f07166fff289a-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/leoozy/JointRD_Neurips2020">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Searching for Low-Bit Weights in Quantized Neural Networks</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Kai Han, Chunjing Xu, Chao Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/abs/2009.08695.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.0/VGG-Small-low-bit_cifar10">code</a> 
-      </p>
-
-      <p>
-      <li><strong>SCOP: Scientific Control for Reliable Neural Network Pruning</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2010.10732">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?2593/noah-cvlab/gpu/1.0/resnet-0.65x_v1.0_oxford_pets">code</a>
-      </p>
-
-      <p>
-      <li><strong>Adapting Neural Architectures Between Domains</strong>
-      <br>
-      Yanxi Li, Zhaohui Yang, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://papers.nips.cc/paper/2020/file/08f38e0434442128fab5ead6217ca759-Paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/liyxi/AdaptNAS">code</a>
-      </p>
-
-      <p>
-      <li><strong>Discernible Image Compression</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Chang Xu, Peng Du, Chao Xu, Chunjing Xu, Qi Tian
-      <br>
-      <em>ACM MM</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2002.06810">paper</a>
-      </p>
-                   
-      <p>
-      <li><strong>Optical Flow Distillation: Towards Efficient and Stable Video Style Transfer</strong>
-      <br>
-      Xinghao Chen*, Yiman Zhang*, <strong>Yunhe Wang</strong>, Han Shu, Chunjing Xu, Chang Xu
-      <br>
-      <em>ECCV</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2007.05146.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/AtlasCase/sample-styletransfer">code</a> 
-      </p>
-      
-      <p>
-      <li><strong>Learning Binary Neurons with Noisy Supervision</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Yixing Xu, Chunjing Xu, Enhua Wu, Chang Xu
-      <br>
-      <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/181-Paper.pdf">paper</a>  
-      </p>
-
-      <p>
-      <li><strong>Neural Architecture Search in a Proxy Validation Loss Landscape</strong>
-      <br>
-      Yanxi Li, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>ICML</em> 2020 | <a style="color: #447ec9" href="https://proceedings.icml.cc/static/paper_files/icml/2020/439-Paper.pdf">paper</a>
-
-      <p>
-      <li><strong>On Positive-Unlabeled Classification in GAN</strong>
-      <br>
-      Tianyu Guo, Chang Xu, Jiajun Huang, <strong>Yunhe Wang</strong>, Boxin Shi, Chao Xu, Dacheng Tao
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_On_Positive-Unlabeled_Classification_in_GAN_CVPR_2020_paper.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>CARS: Continuous Evolution for Efficient Neural Architecture Search</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Xinghao Chen, Boxin Shi, Chao Xu, Chunjing Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_CARS_Continuous_Evolution_for_Efficient_Neural_Architecture_Search_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/CARS">code</a> 
-      </p>
-
-      <p>
-      <li><strong>AdderNet: Do We Really Need Multiplications in Deep Learning?</strong>
-      <br>
-      Hanting Chen*, <strong>Yunhe Wang</strong>*, Chunjing Xu, Boxin Shi, Chao Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_AdderNet_Do_We_Really_Need_Multiplications_in_Deep_Learning_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
-      <br>
-      </p>
-
-      <p>
-      <li><strong>A Semi-Supervised Assessor of Neural Architectures</strong>
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Hanting Chen, Boxin Shi, Chao Xu, Chunjing Xu, Qi Tian, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Tang_A_Semi-Supervised_Assessor_of_Neural_Architectures_CVPR_2020_paper.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection</strong>
-      <br>
-      Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Chao Zhang, Zhaohui Yang, Han Wu, Xinghao Chen, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Hit-Detector_Hierarchical_Trinity_Architecture_Search_for_Object_Detection_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/ggjy/HitDet.pytorch">code</a>
-      </p>
-
-      <p>
-      <li><strong>Frequency Domain Compact 3D Convolutional Neural Networks</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Han Shu, Yehui Tang, Chunjing Xu, Boxin Shi, Chao Xu, Qi Tian, Chang Xu 
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Frequency_Domain_Compact_3D_Convolutional_Neural_Networks_CVPR_2020_paper.pdf">paper</a>
-      </p>
-
-      <li><strong>GhostNet: More Features from Cheap Operations</strong>      
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu
-      <br>
-      <em>CVPR</em> 2020 | <a style="color: #447ec9" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/ghostnet">code</a> 
-      </p>
-      
-      <p>
-      <li><strong>Beyond Dropout: Feature Map Distortion to Regularize Deep Neural Networks</strong>  
-      <br>
-      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Boxin Shi, Chao Xu, Chunjing Xu, Chang Xu
-      <br>
-      <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI dropblock.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/disout">code</a>
-      </p>
-
-      <p>
-      <li><strong>DropNAS: Grouped Operation Dropout for Differentiable Architecture Search</strong>
-      <br>
-      Weijun Hong, Guilin Li, Weinan Zhang, Ruiming Tang, <strong>Yunhe Wang</strong>, Zhenguo Li, Yong Yu
-      <br>
-      <em>IJCAI</em> 2020 | <a style="color: #447ec9" href="https://www.ijcai.org/Proceedings/2020/0322.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Distilling Portable Generative Adversarial Networks for Image Translation</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Han Shu, Changyuan Wen, Chunjing Xu, Boxin Shi, Chao Xu, Chang Xu
-      <br>
-      <em>AAAI</em> 2020 | <a style="color: #447ec9" href="data/2020 AAAI GAN Distillation.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Efficient Residual Dense Block Search for Image Super-Resolution</strong>
-      <br>
-      Dehua Song, Chang Xu, Xu Jia, Yiyi Chen, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>AAAI</em>, 2020 | <a style="color: #447ec9" href="data/2020 AAAI SR NAS.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/vega">code</a>
-      </p>
-
-      <p>
-      <li><strong>Positive-Unlabeled Compression on the Cloud</strong>
-      <br>
-      Yixing Xu, <strong>Yunhe Wang</strong>, Hanting Chen, Kai Han, Chunjing Xu, Dacheng Tao, Chang Xu
-      <br>
-      <em>NeurIPS</em> 2019 | <a style="color: #447ec9" href="data/2019 NIPS PU Compression.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/pu_compress">code</a> | <a style="color: #447ec9" href="http://papers.nips.cc/paper/8525-positive-unlabeled-compression-on-the-cloud-supplemental.zip">supplement</a>
-      </p>
-
-      <p>
-      <li><strong>Data-Free Learning of Student Networks</strong>
-      <br>
-      Hanting Chen,<strong>Yunhe Wang</strong>, Chang Xu, Zhaohui Yang, Chuanjian Liu, Boxin Shi,
-      <br>
-      Chunjing Xu, Chao Xu, Qi Tian
-      <br>
-      <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV DAFL.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/DAFL">code</a>
-      </p>
-
-      <p>
-      <li><strong>Co-Evolutionary Compression for Unpaired Image Translation</strong>
-      <br>
-      Han Shu, <strong>Yunhe Wang</strong>, Xu Jia, Kai Han, Hanting Chen, Chunjing Xu, Qi Tian, Chang Xu 
-      <br>
-      <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV Co-Evolution Pruning.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/GAN-pruning">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Searching for Accurate Binary Neural Architectures</strong>
-      <br>
-      Mingzhu Shen, Kai Han, Chunjing Xu, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICCV Neural Architectures Workshop</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCVw Bianry Search.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>LegoNet: Efficient Convolutional Neural Networks with Lego Filters</strong>
-      <br>
-      Zhaohui Yang, <strong>Yunhe Wang</strong>, Hanting Chen, Chuanjian Liu, Boxin Shi, Chao Xu, Chunjing Xu, Chang Xu
-      <br>
-      <em>ICML</em> 2019 | <a style="color: #447ec9" href="data/2019 ICML LegoNet.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/LegoNet">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Instance-wise Sparsity for Accelerating Deep Models</strong>
-      <br>
-      Chuanjian Liu, <strong>Yunhe Wang</strong>, Kai Han, Chunjing Xu, Chang Xu 
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Instance Sparsity.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Attribute Aware Pooling for Pedestrian Attribute Recognition</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Han Shu, Chuanjian Liu, Chunjing Xu, Chang Xu
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="https://www.ijcai.org/proceedings/2019/0341.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Crafting Efficient Neural Graph of Large Entropy</strong>
-      <br>
-      Minjing Dong, Hanting Chen, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>IJCAI</em> 2019 | <a style="color: #447ec9" href="data/2019 IJCAI Graph Pruning.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Low Resolution Visual Recognition via Deep Feature Distillation</strong>
-      <br>
-      Mingjian Zhu, Kai Han, Chao Zhang, Jinlong Lin, <strong>Yunhe Wang</strong>
-      <br>
-      <em>ICASSP</em> 2019 | <a style="color: #447ec9" href="data/2019 ICASSP LR Distillation.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Learning Versatile Filters for Efficient Convolutional Neural Networks</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chunjing Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>NeurIPS</em> 2018 | <a style="color: #447ec9" href="data/2018 NIPS Versatile Filter.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Versatile-Filters">code</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks-supplemental.zip">supplement</a> 
-      </p>
-
-      <p>
-      <li><strong>Towards Evolutionary Compression</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Jiayan Qiu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>SIGKDD</em> 2018 | <a style="color: #447ec9" href="data/2018 KDD GA pruning.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Autoencoder Inspired Unsupervised Feature Selection</strong>
-      <br>
-      Kai Han, <strong>Yunhe Wang</strong>, Chao Zhang, Chao Li, Chao Xu 
-      <br>
-      <em>ICASSP</em> 2018 | <a style="color: #447ec9" href="data/2018 ICASSP Feature Selector.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/NoahLuffy/AEFS">code</a> 
-      </p>
-
-      <p>
-      <li><strong>Adversarial Learning of Portable Student Networks</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>AAAI</em> 2018 | <a style="color: #447ec9" href="data/2018 AAAI Adversarial Distillation.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>Beyond Filters: Compact Feature Map for Portable Deep Model</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>ICML</em> 2017 | <a style="color: #447ec9" href="data/2017 ICML Beyond Filters.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/YunheWang/RedCNN">code</a> | <a style="color: #447ec9" href="http://proceedings.mlr.press/v70/wang17m/wang17m-supp.zip">supplement</a>
-      </p>
-
-      <p>
-      <li><strong>Beyond RPCA: Flattening Complex Noise in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao 
-      <br>
-      <em>AAAI</em> 2017 | <a style="color: #447ec9" href="data/2017 AAAI Beyond RPCA.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Privileged Multi-Label Learning</strong>
-      <br>
-      Shan You, Chang Xu, <strong>Yunhe Wang</strong>, Chao Xu, Dacheng Tao 
-      <br>
-      <em>IJCAI</em> 2017 | <a style="color: #447ec9" href="data/2017 IJCAI Privileged.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>CNNpack: Packing Convolutional Neural Networks in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Shan You, Chao Xu, Dacheng Tao
-      <br>
-      <em>NeurIPS</em> 2016 | <a style="color: #447ec9" href="data/2016 NIPS CNNpack.pdf">paper</a> | <a style="color: #447ec9" href="https://papers.nips.cc/paper/6390-cnnpack-packing-convolutional-neural-networks-in-the-frequency-domain-supplemental.zip">supplement</a> 
-      </p>
-
-      </ol>
-
-      <h4> Journal Papers:</h4>
-
-      <ol>
-
-      <p>
-      <li><strong>Adversarial Recurrent Time Series Imputation</strong>
-      <br>
-      Shuo Yang, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
-      <br>
-      <em>IEEE TNNLS</em> 2020 |<a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158560">paper</a>
-      </p>
-  
-      <p>
-      <li><strong>Learning Student Networks via Feature Embedding</strong>
-      <br>
-      Hanting Chen, <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TNNLS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1812.06597">paper</a>
-      </p>
-
-      <p>
-      <li><strong>Packing Convolutional Neural Networks in the Frequency Domain</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TPAMI</em> 2018 | <a style="color: #447ec9" href="data/2018 PAMI CNNpack.pdf">paper</a>
-      </p>
-
-      <p>
-      <li><strong>DCT Regularized Extreme Visual Recovery</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Chang Xu, Shan You, Chao Xu, Dacheng Tao
-      <br>
-      <em>IEEE TIP</em> 2017 | <a style="color: #447ec9" href="data/2017 TIP DCT norm.pdf">paper</a> 
-      </p>
-
-      <p>
-      <li><strong>DCT Inspired Feature Transform for Image Retrieval and Reconstruction</strong>
-      <br>
-      <strong>Yunhe Wang</strong>, Miaojing Shi, Shan You, Chao Xu
-      <br>
-      <em>IEEE TIP</em> 2016 | <a style="color: #447ec9" href="data/2016 TIP DCT feature.pdf">paper</a>
-      </p>
-
-      </ol>
-
-    </p>
-  </div>
-
-<!-- The Services Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="service">
-    <h2>Services</h2>
-      <p><li> Area Chair of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p>
-      <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
-      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
-  </div>
-
-  <!-- The Awards Section -->
-  <div class="w3-container w3-padding-32" id="award">
-    <h2>Awards</h2>
-    <p><li> 2020, <a href="https://mp.weixin.qq.com/s/dORL01lgFNDHgjp3KMJmiQ">Nomination for Outstanding Youth Paper Award</a>, <a href="https://worldaic.com.cn/portal/en/aboutus.html">WAIC</a></p>               
-    <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
-    <p><li> 2017, <a href="http://scholarship.baidu.com/">Baidu Scholarship</a></p>
-    <p><li> 2017, President's PhD Scholarship, Peking University</p>
-    <p><li> 2017, National Scholarship for Graduate Students</p>
-    <p><li> 2016, National Scholarship for Graduate Students</p>
-  </div>  
-
-  <div class="w3-light-grey w3-center w3-padding-24">
-
-    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br>
-
-  <!-- Default Statcounter code for Yunhe Wang's Homepage
-  https://www.wangyunhe.site -->
-  No.
-  <script type="text/javascript">
-  var sc_project=12347113; 
-  var sc_invisible=0; 
-  var sc_security="21aca5d1"; 
-  var sc_https=1; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script> Visitor Since Jun 2020. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics Made Easy -
-  StatCounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
-  alt="Web Analytics Made Easy - StatCounter"></a></div>
-  </noscript>
-  <!-- End of Statcounter Code -->
-
-  </div>
-
-  <!-- End page content -->
-</div>
-
-<script>
-// Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
  
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+@henryxub 
+JunweiLiang
+/
+about
+1
+46
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+about/index.html
+@JunweiLiang
+JunweiLiang first commit
+Latest commit dda73cb on 11 Apr 2020
+ History
+ 1 contributor
+Executable File  754 lines (721 sloc)  35.3 KB
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="webpage/bootstrap.min.css"/>
+    <script language="javascript" src="webpage/jquery.min.js"></script>
+	<script language="javascript" src="webpage/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
+	<title>Junwei Liang 梁俊卫</title>
+	<meta name="description" content="Personal website for Junwei Liang at Carnegie Mellon University. Junwei Liang is a Ph.D. candidate in the Language Technologies Institute at Carnegie Mellon University. Received the graduation degree from Renmin University, Beijing, China, in 2015, where he worked as a research assistant in the multimedia lab at Renmin University. He received the Master of Language Technologies degree from the Language Technologies Institute at Carnegie Mellon University in 2017. He was at Google Inc., Pittsburgh, PA, as a student researcher in 2018. His research interests include computer vision, natural language processing and machine learning.">
+	<meta name="keywords" content="Junwei Liang,CMU,computer vision,PhD">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016426-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156016426-1');
 </script>
 
+</head>
+<body>
+<style type='text/css'>
+	body{
+		font-family:arial,"Microsoft YaHei",微软雅黑,宋体,Helvetica;
+		font-size:15px;
+	}
+	/*
+		div.content:
+			provide the content div in the middle
+	*/
+	body div.content{
+		/*width:1280px;*/
+		width:1000px;
+		margin:0 auto;
+		line-height:30px;
+	}
+	/*
+		header wrapper
+	*/
+	body div.header{
+		background-color:#2196F3;
+	}
+	body div.header > div.content{
+		padding:10px;
+	}
+	/*
+		footer1
+	*/
+	body div.footer1{
+		margin-top:30px;
+		background-color:#64B5F6;
+	}
+	/*
+		footer2
+	*/
+	body div.footer2{
+		background-color:#2196F3;
+	}
+	body div.footer > div.content{
+		padding:10px;
+	}
+	body div.footer1 > div.content{
+		padding:20px;
+		line-height:40px;
+		font-size:1.2em;
+	}
+	/*
+		utils css
+	*/
+	div.white-text{
+		color:white;
+	}
+	div.content > div.title{
+		padding:20px 0;
+		border-top:1px silver solid;
+		margin-top:30px;
+		font-size:2em;
+		font-weight:bold;
+	}
+	body a{
+		text-decoration:none;
+	}
+	div.content ul{
+		list-style: disc inside none;
+	}
+	div.content ol{
+		list-style: none inside none;
+	}
+	div.content li{
+		line-height:30px;
+		padding-bottom:5px;
+	}
+	div.content div.float-right{
+		float:right;
+	}
+</style>
+<!-- css for bio -->
+<style type="text/css">
+	/*
+		bio
+	*/
+	div.bio{
+		font-size:1.2em;
+	}
+	div.bio > div.left{
+		float:left;
+		width:300px;
+	}
+	div.bio > div.left > img.me{
+		max-height:220px;
+		margin:10px;
+		max-width:220px;
+		margin-top:20px;
+		margin-left:40px;
+	}
+
+	div.bio > div.right{
+		margin:0 0 0 310px;
+		min-height:300px;
+	}
+	div.bio > div.right > div.line.name{
+		padding:15px 0;
+		line-height:40px;
+	}
+	div.bio > div.right > div.name > span.name,div.bio > div.right > div.name > span.chineseName{
+		font-size:2em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.name > span.chinesesName{
+		font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+	}
+	div.bio > div.right > div.name > span.misc{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.line.school{
+		padding:5px 0;
+	}
+
+	div.bio > div.right > div.line.office{
+		padding:5px 0;
+	}
+
+</style>
+<!-- quick link and intro -->
+<style type="text/css">
+div.quickLink{
+	min-height:70px;
+}
+div.quickLink > .block{
+	display:block;
+	float:left;
+	padding:10px 0px;
+	text-align:center;
+	border:1px silver solid;
+	border-radius:5px;
+	box-shadow:2px 2px 1px silver;
+	width:140px;
+	margin-right:50px;
+	margin-top:20px;
+	cursor:pointer;
+}
+</style>
+<!-- research and education -->
+<style type="text/css">
+div.research > ul > li > span.title,div.research > ul > li > div.time,
+div.education > ul > li > span.title,div.education > ul > li > div.time,
+div.pro > ul > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.research > ul > li > div.info,
+div.education > ul > li > div.info,
+div.pro > ul > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+</style>
+<!-- publications -->
+<style type="text/css">
+div.publications > ol > li{
+	padding-bottom: 30px;
+}
+div.publications > ol > li > span.title{
+	font-weight:bold;
+	font-size:1.2em;
+}
+div.publications > ol > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+div.publications > ol > li > div.info.italic{
+	font-style: italic;
+}
+div.publications div.imgblock{
+	float:left;
+	height:180px;
+	width:300px;
+	padding:10px;
+	margin-right:30px;
+	text-align: center;
+}
+div.publications div.imgblock > img{
+	max-width:100%;
+	max-height:100%;
+}
+img.press{
+	height:20px;
+}
+</style>
+<div class="header">
+	<div class="content white-text">
+		Junwei Liang
+	</div>
+</div>
+
+
+<div class="content bio">
+	<!-- bio -->
+	<div class="left">
+		<img class='me' src="resources/me.jpeg"></img>
+		<br/>
+		<a href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ">
+			<img class='scholar' style="height:30px" src="resources/googlescholar.png"></img>
+		</a>
+		<a href="https://github.com/JunweiLiang">
+			<img class='github' style="height:30px" src="resources/github.png"></img>
+		</a>
+		<a href="https://twitter.com/JunweilLiang">
+			<img class='twitter' style="height:30px" src="resources/twitter.png"></img>
+		</a>
+		<a href="https://www.linkedin.com/in/junweiliang/">
+			<img class='linkedin' style="height:30px" src="resources/linkedin.png"></img>
+		</a>
+		<a href="https://www.youtube.com/channel/UC-z7ZWp8Rbu2xhxnbAL_bRQ">
+			<img class='youtube' style="height:20px" title="My Youtube channel" src="resources/yt.png"></img>
+		</a>
+		<a href="https://www.zhihu.com/people/junwei-liang-50">
+			<img class='zhihu' style="height:25px" title="My Zhihu page" src="resources/zhihu.png"></img>
+		</a>
+		<a href="https://www.semanticscholar.org/author/Junwei-Liang/1915796">
+			<img class='semanticscholar' style="height:25px" src="resources/semantic_scholar.png"></img>
+		</a>
+		<a href="https://www.researchgate.net/profile/Junwei_Liang3">
+			<img class='researchgate' style="height:25px" src="resources/rg.png"></img>
+		</a>
+		<a href="https://dblp.org/pers/hd/l/Liang_0001:Junwei">
+			<img class='dblp' style="height:20px" src="resources/dblp.png"></img>
+		</a>
+
+	</div>
+	<div class="right">
+		<div class="line name">
+			<span class="name">Junwei Liang</span>
+			<span class="misc">(Ph.D. Candidate)</span> &nbsp; &nbsp; &nbsp;
+			<span class="chineseName">梁俊卫</span>
+		</div>
+		<div class="line school">
+			Language Technologies Institute
+		</div>
+		<div class="line school">
+			School of Computer Science
+		</div>
+		<div class="line school">
+			Carnegie Mellon University
+		</div>
+		<br/>
+		<div class="line office">
+			Office: Gates and Hillman Centers 5513
+		</div>
+		<div class="line office">
+			Email: junweil@cs.cmu.edu
+		</div>
+	</div>
+</div>
+
+<div class="content quickLink">
+	<a class="block" href="#publications">Publications</a>
+	<a class="block" href="#honors">Awards</a>
+	<a class="block" href="#research">Research</a>
+	<a class="block" href="https://github.com/JunweiLiang" target="_blank">Code</a>
+	<a class="block" href="#teaching">Talks</a>
+</div>
+
+<div class="content intro">
+	<div class='title'>Introduction</div>
+	Greetings! I'm a 3rd year Ph.D. student under the supervision of <a href="https://scholar.google.com/citations?user=Py54GcEAAAAJ&hl=en">Prof. Alexander Hauptmann</a> at Carnegie Mellon University. <br/>
+	My research interests are large-scale computer vision and natural language processing. <br/>
+	I am also doing research/building tools for event reconstruction from unorganized social media videos for public safety projects. <br/>
+</div>
+
+<div class="content news">
+	<a name="news"></a>
+	<div class="title">News</div>
+	<ul>
+		<li>
+			[04/2020] A vision-based <a href="https://docs.google.com/presentation/d/1CCGDiHE8_6VIwZDg2N6YcIsSrO-p6LGftZMbbthfZFc/edit?usp=sharing"><span style="font-style: italic;">Social Distancing Early Forecasting</span></a> system is open-sourced. It is based on our CVPR'19 future prediction work</span>.
+		</li>
+		<li>
+			[12/2019] <a href="https://next.cs.cmu.edu/multiverse/index.html"><span style="font-style: italic;">Multiverse</span></a> paper is out! Accepted by <span style="font-weight:bold">CVPR 2020</span>.
+		</li>
+		<li>
+			[12/2019] Received <a href="http://scholarship.baidu.com/">Baidu Scholarship</a> (10 recipients globally).
+			Press Coverage:
+				<a href="http://news.ruc.edu.cn/archives/267603">
+					<img class="press" src="resources/ruc.png"></img>
+				</a>,
+				<a href="http://m.china.com.cn/appshare/doc_1_20_1489589.html?from=groupmessage&isappinstalled=0">
+					<img class="press" src="resources/china.png"></img>
+				</a>,
+				<a href="https://baijiahao.baidu.com/s?id=1654884571460145099&wfr=spider&for=pc">
+					<img class="press" src="resources/baidu.png"></img>
+				</a>,
+				<a href="https://www.yanxishe.com/blogDetail/17504">
+					<img class="press" src="resources/yanxishe.png"></img>
+				</a>,
+				<a href="http://app.bjheadline.com/8816/newshow.php?newsid=5514954&src=stream&typeid=20&uid=335186&did=16835adeb9fa457b8ec1f9b570dcc4b1&show=0&fSize=M&ver=2.6.3&ff=fz&mood=wx&from=groupmessage&isappinstalled=0">
+					<img class="press" src="resources/bjheadline.png"></img>
+				</a>
+		</li>
+		<li>
+			[09/2019] Our <a href="https://vera.cs.cmu.edu/">Shooter Localization System</a> won <span style="font-weight:bold">Best Demo</span> award at <a href="https://cbmi2019.org/">CBMI2019</a>. [<a href="https://vera.cs.cmu.edu/" target="_blank">Project Site</a>]
+			<br/>Press Coverage:
+				<a href="https://www.cmu.edu/news/stories/archives/2019/november/system-locates-shooters-using-smartphone-video.html">
+					<img class="press" src="resources/cmu.png"></img>
+				</a>,
+				<a href="https://pittsburgh.cbslocal.com/2019/11/20/cmu-develops-video-system-locate-mass-shooters/">
+					<img class="press" src="resources/cbs.png"></img>
+				</a>,
+				<a href="https://www.post-gazette.com/business/tech-news/2019/11/20/Carnegie-Mellon-CMU-develops-cellphone-smartphone-video-system-location-shooter-triangulate/stories/201911200101">
+					<img class="press" src="resources/post.png"></img>
+				</a>,
+				<a href="https://gizmodo.com/smartphone-videos-can-now-be-analyzed-and-used-to-pinpo-1839979803">
+					<img class="press" src="resources/gizmodo.png"></img>
+				</a>,
+				<a href="https://www.dailymail.co.uk/sciencetech/article-7707501/Carnegie-Mellon-aims-end-pro-longed-massacres-locates-active-shooters.html">
+					<img class="press" src="resources/dailymail.png"></img>
+				</a>,
+				<a href="https://www.techspot.com/news/82881-researchers-develop-system-can-pinpoint-shooter-location-using.html">
+					<img class="press" src="resources/techspot.png"></img>
+				</a>
+		</li>
+		<li>
+			[06/2019] Presented Future Prediction paper at <span style="font-weight:bold">CVPR 2019</span>. [<a href="https://twitter.com/jcniebles/status/1141366303921303552" target="_blank">Tweets</a>]
+		</li>
+		<li>[04/2019] Our CMU team's (INF & MUDSML) system achieved the <span style="font-weight:bold">best performance</span> on the <a href="https://actev.nist.gov/prizechallenge#tab_leaderboard" target="_blank">activity detection challenge</a> (<a href="resources/actev-prizechallenge-06-2019.png" target="_blank">Cached</a>) in surveillance videos hosted by NIST & IARPA. <!--The competitors include all other DIVA-funded teams from universities and companies as well as other strong participants from all over the world.--> We have released our code and model for Object Detection & Tracking <a href="https://github.com/JunweiLiang/Object_Detection_Tracking">here</a>. </li>
+		<li>[02/2019] <span style="font-weight:bold">Future activity & path prediction</span> paper reported by the media with <span style="font-weight:bold">30k+ views</span> in a week. <a href="https://next.cs.cmu.edu" target="_blank"><i title="Go to project page" class="icon-zoom-in"></i></a></li>
+		<li>[12/2018] <span style="font-weight:bold">MemexQA</span> paper accepted by <span style="font-weight:bold">TPAMI</span>. <a href="https://memexqa.cs.cmu.edu" target="_blank"><i title="Go to project page" class="icon-zoom-in"></i></a></li>
+
+		<li>[06/2018] Presented MemexQA paper at <span style="font-weight:bold">CVPR 2018</span>. [<a href="https://youtu.be/TBOnKekODCI?t=1h11m29s" target="_blank">Spotlight Talk</a>]</li>
+		<li>[03/2017] Two papers accepted by ICASSP 2017.</li>
+		<li>[02/2017] Two demo papers accepted by <span style="font-weight:bold">AAAI 2017</span>.</li>
+		<li>[11/2016] <span style="font-weight:bold">Best performer</span> in the NIST TRECVID 2016 Ad-hoc Video Search Challenge (no annotation track).</li>
+		<li>[02/2016] One oral paper accepted by <span style="font-weight:bold">IJCAI 2016</span>.</li>
+	</ul>
+</div>
+
+
+<div class="content education">
+	<a name="education"></a>
+	<div class="title">Educations</div>
+	<ul>
+		<li>
+			<span class="title">Ph.D. in Language and Information Technology</span> <div class="float-right time">2017 - present</div>
+			<div class="info">School of Computer Science, Carnegie Mellon University</div>
+			<div class="info">Advisor: <a href="https://scholar.google.com/citations?user=Py54GcEAAAAJ&hl=en">Alexander Hauptmann</a></div>
+		</li>
+		<li>
+			<span class="title">M.S. in Language Technologies</span> <div class="float-right time">2015 - 2017</div>
+			<div class="info">School of Computer Science, Carnegie Mellon University</div>
+			<div class="info">Advisor: <a href="https://scholar.google.com/citations?user=Py54GcEAAAAJ&hl=en">Alexander Hauptmann</a></div>
+		</li>
+		<li>
+			<span class="title">B.S. in Computer Science</span> <div class="float-right time">2011 - 2015</div>
+			<div class="info">School of Information, Renmin University of China</div>
+			<div class="info">Advisor: <a href="https://scholar.google.com/citations?user=8UkYbCMAAAAJ&hl=en">Qin Jin</a></div>
+		</li>
+	</ul>
+</div>
+
+<div class="content honors" name='honors'>
+	<a name="honors"></a>
+	<div class="title">Awards</div>
+	<ul>
+		<li>Baidu Scholarship (10 recipients globally) <div class="float-right">2019</div></li>
+		<li>Best Demo Award at CBMI2019 <div class="float-right">2019</div></li>
+		<li>Yahoo! Fellowship <div class="float-right">2016-2018</div></li>
+		<li>Winner, TRECVID ActEV Challenge <div class="float-right">2019</div></li>
+		<li>Winner, TRECVID Ad-hoc Video Search Challenge, no annotation track  <div class="float-right">2016</div></li>
+		<li>CMU LTI Student Research Symposium Best Paper Honorable Mentions <div class="float-right">2018</div></li>
+		<!--
+		<li>CVPR, CES, IJCAI, ICASSP, NIST PSCR, NIST TRECVID student travel grants <div class="float-right">2016-2020</div></li>
+		<li>Best Undergraduate Thesis (Top 5%) <div class="float-right">2015</div></li>
+		<li>Second Prize, the National Undergraduates Computer Design Competition of China <div class="float-right">2014</div></li>
+		<li>National Prize (Top 10%), National Undergraduates Innovation Project <div class="float-right">2013</div></li>
+	-->
+	</ul>
+</div>
+
+<div class="content pro">
+	<div class="title">Selected Media</div>
+	<ul>
+		<li>
+			<span style="font-weight: bold">CBS.</span> <span style="font-style: italic;">Researchers At Carnegie Mellon University Develop Video System To Locate Mass Shooters Using Smartphones</span>, November 20, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">post-gazette.</span> <span style="font-style: italic;">CMU develops video system that can locate mass shooter</span>, November 20, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">GIZMODO.</span> <span style="font-style: italic;">Smartphone Videos Can Now Be Analyzed and Used to Pinpoint the Location of a Shooter</span>, November 21, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">DailyMail.</span> <span style="font-style: italic;">Active shooters can be located within minutes by new software that analyzes smartphone video from the scene and can even identify the type of gun</span>, November 20, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">Techspot.</span> <span style="font-style: italic;">Researchers develop system that can pinpoint a shooter's location using smartphone videos</span>, November 21, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">China.com.cn.</span> <span style="font-style: italic;">人大高瓴人工智能学院“高屋建瓴-青年说”首期开讲</span>, Jan 6, 2020.
+		</li>
+		<li>
+			<span style="font-weight: bold">Baidu.</span> <span style="font-style: italic;">AI界的中国力量！百度奖学金助力中国AI人才绽放光芒！</span>, Jan 5, 2020.
+		</li>
+		<li>
+			<span style="font-weight: bold">量子位.</span> <span style="font-style: italic;">李飞飞团队造出”窥视未来”新AI:去哪干啥一起猜, 准确率压倒老前辈</span>, received 30k+ views in a week, Feb 13, 2019.
+		</li>
+		<li>
+			<span style="font-weight: bold">机器之心.</span> <span style="font-style: italic;">遇见未来！李飞飞等提出端到端系统Next预测未来路径与活动</span>, Feb 14, 2019.
+		</li>
+	</ul>
+</div>
+
+<div class="content publications">
+	<a name="publications"></a>
+	<div class="title">Selected Publications [<a href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ" target="_blank">Google Scholar</a>]</div>
+	<ol>
+		<li>
+			<div class="imgblock"><img src="camera_ready/multiverse.gif"></img></div>
+			<span class="title">The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, Kevin Murphy, Ting Yu, Alexander Hauptmann</div>
+			<div class="info">Preprint, 2019. Accepted by CVPR 2020.</div>
+			<div class="stuff">
+				<a class="" href="https://arxiv.org/abs/1912.06445" target="_blank">[Paper]</a>
+				<a class="" href="https://next.cs.cmu.edu/multiverse/resources/arxiv.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://youtu.be/RW45YQHxIhk" target="_blank">[Demo Video]</a>
+				<a class="" href="https://next.cs.cmu.edu/multiverse" target="_blank">[Project Page/Code/Model]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<!--<div class="imgblock"><img src="camera_ready/peekfuture.png"></img></div>-->
+			<div class="imgblock"><img src="camera_ready/next.gif"></img></div>
+			<span class="title">Peeking into the Future: Predicting Future Person Activities and Locations in Videos
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, Juan Carlos Niebles, Alexander Hauptmann, Li Fei-Fei</div>
+			<div class="info">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019. <span class="text-error">(Translated and reported by multiple Chinese media (<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E9%87%8F%E5%AD%90%E4%BD%8D" target="_blank">量子位</a> & <a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83" target="_blank">机器之心</a>, 02/13/2019), with 30k+ views in a week.)</span> </div>
+			<div class="stuff">
+				<a class="" href="https://arxiv.org/abs/1902.03748" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/future19.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=NyrGxGoS01U" target="_blank">[Demo Video]</a>
+				<a class="" href="https://next.cs.cmu.edu" target="_blank">[Project Page/Code/Model]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"  style="height:170px;" ><img src="camera_ready/mm19.gif"></img></div>
+			<span class="title">Shooter Localization Using Social Media Videos
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Jay Aronson, Alexander Hauptmann</div>
+			<div class="info">In Proceedings of the 27th ACM International Conference on Multimedia, 2019. <span class="text-error"><br/>(Press coverage:
+				<a href="https://pittsburgh.cbslocal.com/2019/11/20/cmu-develops-video-system-locate-mass-shooters/">
+					<img class="press" src="resources/cbs.png"></img>
+				</a>,
+				<a href="https://www.cmu.edu/news/stories/archives/2019/november/system-locates-shooters-using-smartphone-video.html">
+					<img class="press" src="resources/cmu.png"></img>
+				</a>,
+
+				<a href="https://www.wpxi.com/news/top-stories/shooters-can-be-located-with-smartphone-video-using-new-cmu-developed-tool/1010922936">
+					<img class="press" src="resources/wpxi.png"></img>
+				</a>,
+				<a href="https://www.post-gazette.com/business/tech-news/2019/11/20/Carnegie-Mellon-CMU-develops-cellphone-smartphone-video-system-location-shooter-triangulate/stories/201911200101">
+					<img class="press" src="resources/post.png"></img>
+				</a>,
+				<a href="https://www.dailymail.co.uk/sciencetech/article-7707501/Carnegie-Mellon-aims-end-pro-longed-massacres-locates-active-shooters.html">
+					<img class="press" src="resources/dailymail.png"></img>
+				</a>,
+				<a href="https://gizmodo.com/smartphone-videos-can-now-be-analyzed-and-used-to-pinpo-1839979803">
+					<img class="press" src="resources/gizmodo.png"></img>
+				</a>,
+				<a href="https://www.msn.com/en-us/news/us/researchers-at-carnegie-mellon-university-develop-video-system-to-locate-mass-shooters/ar-BBX3wRA">
+					<img class="press" src="resources/msn.png"></img>
+				</a>,
+				<a href="https://www.techspot.com/news/82881-researchers-develop-system-can-pinpoint-shooter-location-using.html">
+					<img class="press" src="resources/techspot.png"></img>
+				</a>,
+				<a href="https://www.sciencedaily.com/releases/2019/11/191120070712.htm">
+					<img class="press" src="resources/science_daily.png"></img>
+				</a>,
+				<a href="https://gcn.com/articles/2019/11/22/smartphone-shooter-location.aspx">
+					<img class="press" src="resources/gcn.png"></img>
+				</a>
+			)</span> </div>
+			<div class="stuff">
+				<a class="" href="https://www.cmu.edu/chrs/publications/pdf/shooter-localization-using-social-media-videos.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/mm19.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=6q7LqqzrY2I" target="_blank">[Demo Video]</a>
+				<a class="" href="https://vera.cs.cmu.edu" target="_blank">[Project Page]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/memexqa.png"></img></div>
+			<span class="title">Focal Visual-Text Attention for Memex Question Answering
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, Liangliang Cao, Yannis Kalantidis, Li-Jia Li, and Alexander Hauptmann</div>
+			<div class="info">In IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2019. </div>
+			<div class="stuff">
+				<a class="" href="https://ieeexplore.ieee.org/document/8603827" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/tpami19.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=hH-SXKA7hE8" target="_blank">[Demo Video]</a>
+				<a class="" href="https://memexqa.cs.cmu.edu" target="_blank">[Code/Model/Dataset]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/fvta.png"></img></div>
+			<span class="title">Focal Visual-Text Attention for Visual Question Answering
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, Liangliang Cao, Li-Jia Li, and Alexander Hauptmann</div>
+			<div class="info">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018. <span class="text-error">(Spotlight Paper, <span style="font-weight:bold">6.8%</span> acceptance rate)</span></div>
+			<div class="stuff">
+				<a class="" href="camera_ready/cvpr18.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/cvpr18.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://memexqa.cs.cmu.edu/fvta.html" target="_blank">[Code/Model]</a>
+				<a  class="" href="https://youtu.be/TBOnKekODCI?t=1h11m29s" target="_blank">[Presentation]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
+		<li>
+			<div class="imgblock"><img src="camera_ready/3d_recon.png"></img></div>
+			<span class="title">An Event Reconstruction Tool for Conflict Monitoring Using Social Media
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Desai Fan, Han Lu, Poyao Huang, Jia Chen, Lu Jiang, and Alexander Hauptmann</div>
+			<div class="info">In AAAI Conference on Artificial Intelligence (AAAI), 2017.</div>
+			<div class="stuff">
+				<a class="" href="https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14659/14033" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/aaai17_2.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=DAhL5QL9Ko4" target="_blank">[Demo Video]</a>
+				<a class="" href="https://vera.cs.cmu.edu/VERA_3D_Reconstruction/" target="_blank">[Project Page]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
+		<li>
+			<div class="imgblock"><img src="camera_ready/aaai17_1.png"></img></div>
+			<span class="title">Webly-Supervised Learning of Multimodal Video Detectors
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, and Alexander Hauptmann</div>
+			<div class="info">In AAAI Conference on Artificial Intelligence (AAAI), 2017.</div>
+			<div class="stuff">
+				<a class="" href="camera_ready/aaai17_1.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/aaai17_1.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=3he6VDwYMCQ" target="_blank">[Demo Video]</a>
+				<a class="" href="posters/well_poster.pptx" target="_blank">[Poster]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
+		<li>
+			<div class="imgblock"><img src="camera_ready/ijcai16.png"></img></div>
+			<span class="title">Learning to Detect Concepts from Webly-Labeled Video Data
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang, Deyu Meng, and Alexander Hauptmann</div>
+			<div class="info">In International Joint Conference on Artificial Intelligence (IJCAI), 2016.</div>
+			<div class="stuff">
+				<a class="" href="camera_ready/ijcai16.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/ijcai16.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=3he6VDwYMCQ" target="_blank">[Demo Video]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/icmr16.png"></img></div>
+			<span class="title">Video Description Generation using Audio and Visual Cues
+			</span>
+			<div class="info text-success italic">Qin Jin, and <span style="font-weight:bold">Junwei Liang</span></div>
+			<div class="info">In ACM International Conference on Multimedia Retrieval (ICMR), 2016.</div>
+			<div class="stuff">
+				<a class="" href="camera_ready/icmr16.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/icmr16.bib" target="_blank">[BibTex]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
+		<li>
+			<div class="imgblock"><img src="camera_ready/icassp17_1.png"></img></div>
+			<span class="title">Temporal Localization of Audio Events for Conflict Monitoring in Social Media
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Junwei Liang</span>, Lu Jiang and Alexander Hauptmann</div>
+			<div class="info">In IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2017.</div>
+			<div class="stuff">
+				<a class="" href="camera_ready/icassp17_1.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/icassp17_1.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://www.youtube.com/watch?v=em-0CsJoqeU" target="_blank">[Demo Video]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
+
+	</ol>
+</div>
+
+
+<div class="content research">
+	<a name="research"></a>
+	<div class="title">Research Experience</div>
+	<ul>
+		<li>
+			<span class="title">Research Assistant at Carnegie Mellon University</span> <div class="float-right time">2015 - present</div>
+			<div class="info">
+				Worked on Large-scale Video Analysis and Retrieval. Studied unsupervised learning of video concept detectors from the Internet. Also participated in the development of event reconstruction tool.
+				The project is for Synchronization and localization of noisy user-generated videos to reconstruct the event scene and timeline from unorganized social media videos, affiliates with CMU <a href="http://www.cmu.edu/chrs/" target="_blank">Center for Human Rights Science</a>.
+				I'm also the major contributor to the government-funded projects: <a href="https://www.nist.gov/communications-technology-laboratory/pscr" target="_blank">PSCR by NIST</a> (2017-2020), <a href="https://www.iarpa.gov/index.php/research-programs/diva" target="_blank">DIVA by IARPA</a> (2017-2021) and <a href="https://www.iarpa.gov/index.php/research-programs/aladdin-video" target="_blank">ALADDIN by IARPA</a> (2017).
+				Advised by <a href="https://scholar.google.com/citations?user=Py54GcEAAAAJ" target="_blank">Prof. Alexander Hauptmann</a>.
+				<!--[<a href="https://www.nist.gov/video/real-time-video-analytics-situation-awareness" target="_blank">PSCR 2018 presentation</a>, <a href="https://www.nist.gov/ctl/pscr/2019-stakeholder-meeting-analytics-sessions" target="_blank">2019</a>]-->
+			</div>
+		</li>
+		<li>
+			<span class="title">Research Intern at Google AI</span> <div class="float-right time">May 2019 - Aug 2019</div>
+			<div class="info">
+				Worked on future person activity and trajectory prediction in videos. Integrated research models to a Google Cloud product. Used 3D simulator (carla.org) to collect multi-modal future behavioral data.
+			</div>
+		</li>
+		<li>
+			<span class="title">Student Researcher at Google Cloud AI</span> <div class="float-right time">May 2018 - Dec 2018</div>
+			<div class="info">
+				Worked on activity recognition and prediction in multi-perspective streaming videos. Studied principal computer vision and high-level semantic reasoning models for interperson and person-object interaction to help AI better understand human activities. Advised by <a href="http://www.cs.cmu.edu/~lujiang/" target="_blank">Lu Jiang</a>.
+			</div>
+		</li>
+		<li>
+			<span class="title">Research Assistant at Renmin University of China</span> <div class="float-right time">2013 - 2015</div>
+			<div class="info">
+				Studied semantic concept annotation on user-generated videos using audio. Participated HUAWEI semantic concept annotation of UGC videos grand challenge 2014 and ranked 3rd in the evaluation. Also worked on natural language description generation for images and videos with deep models. Ranked 1st in ImageCLEF 2015 “image to sentence” subtask in the evaluation.
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content pro">
+	<a name="teaching"></a>
+	<div class="title">Teaching & Talks</div>
+	<ul>
+		<li>
+			<span class="title">Guest Lecture: Introduction to Machine Learning in Computer Vision [<a href="https://docs.google.com/presentation/d/1xvDyHBWIvn-Z5Mj-5Up47YvzET5zl6X0dTSQyFXf-v0/edit?usp=sharing" target="_blank">Slides</a>]</span><div class="float-right time">2020</div>
+			<div class="info">11-775 Large-scale Multimedia Analysis,  hosted by Prof. Alex Hauptmann and Prof. Rita Singh, Carnegie Mellon University</div>
+		</li>
+		<li>
+			<span class="title">Invited Talk: Real-time Video Analytics for Situation Awareness
+				[<a href="https://www.nist.gov/video/real-time-video-analytics-situation-awareness" target="_blank">Talk-2018</a>]
+				[<a href="https://www.nist.gov/ctl/pscr/real-time-video-analytics-situation-awareness" target="_blank">Talk-2019</a>]
+			</span><div class="float-right time">2019</div>
+			<div class="info">At the Public Safety Communications Research annual conference hosted by <a href="https://www.nist.gov/ctl/pscr">NIST PSCR</a>.</div>
+		</li>
+		<li>
+			<span class="title">Oral Talk: Focal Visual-Text Attention for Memex Question Answering
+			</span><div class="float-right time">2018</div>
+			<div class="info">At CMU LTI Student Research Symposium 2018. Received best paper honorable mentions award.</div>
+		</li>
+		<li>
+			<span class="title">Spotlight Talk: Focal Visual-Text Attention for Visual Question Answering [<a href="https://www.youtube.com/watch?v=TBOnKekODCI&feature=youtu.be&t=1h11m29s" target="_blank">Video</a>]</span><div class="float-right time">2018</div>
+			<div class="info">At CVPR 2018 in Salt Lake City</div>
+		</li>
+		<li>
+			<span class="title">Oral Talk: Learning to Detect Concepts from Webly-Labeled Video Data
+			</span><div class="float-right time">2016</div>
+			<div class="info">At IJCAI 2016 in New York City.</div>
+		</li>
+		<li>
+			<span class="title">Teaching Assistant</span><div class="float-right time">2018</div>
+			<div class="info">LTI Colloquium,  hosted by Prof. Alex Hauptmann, Carnegie Mellon University</div>
+
+		</li>
+		<li>
+			<span class="title">Teaching Assistant</span><div class="float-right time">2014</div>
+			<div class="info">Practical Course on Speech Synthesis and Building Synthetic Voices by Prof. Alan Black, Summer School of Renmin University of China</div>
+		</li>
+	</ul>
+</div>
+<div class="content pro">
+	<div class="title">Academic Service</div>
+	<ul>
+		<li>
+			<span class="title">Journal Reviewer</span>
+			<div class="info">ACM TOMM</div>
+			<div class="info">Neurocomputing</div>
+			<div class="info">IEEE Transactions on Multimedia</div>
+			<div class="info">IEEE Access</div>
+			<div class="info">IEEE Transactions on Circuits and Systems for Video Technology</div>
+		</li>
+		<li>
+			<span class="title">Conference Reviewer</span>
+			<div class="info">ACM Multimedia 2017</div>
+			<div class="info">ACM Multimedia 2019</div>
+			<div class="info">ACM Multimedia 2020</div>
+			<div class="info">ACL Student Research Workshop 2020</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content pro">
+	<div class="title">Web Application Portfolio</div>
+	<ul>
+		<li>
+			<span class="title"><a href="https://vera.cs.cmu.edu/">Shooter Localization from Social Media Videos</a></span>
+			<div class="info">Widely reported by news media. Presented at CES 2020.</div>
+		</li>
+		<li>
+			<span class="title"><a href="https://github.com/JunweiLiang/Lecture_Attendance_Management">Attendance Management System</a></span>
+			<div class="info">
+				Used within <a href="https://www.lti.cs.cmu.edu/">CMU LTI</a> for a course with over a hundred students every semester since 2017.
+			</div>
+		</li>
+		<li>
+			<span class="title">Major CMS websites for organizations</span>
+			<div class="info"><a href="http://www.hillhouseacademy.com/">Hillhouse Academy</a>,  <a href="https://dasai.ruc.edu.cn/index.php/site/designer">Annual Computer Design Competition in China (>2000 users annually)</a> </div>
+		</li>
+	</ul>
+</div>
+
+
+<div class="footer footer1">
+	<div class="content white-text">
+		Informedia Lab, Language Technologies Institute <br/>
+		School of Computer Science <br/>
+		Carnegie Mellon University
+	</div>
+<div class="footer footer2">
+	<div class="content white-text">
+		Created and designed by <a style="color:white" href="https://junweiliang.me">Junwei Liang</a> in CMU.
+	</div>
+</div>
+
+<!--
+	a Junwei Liang's production
+	contact: junweil@cs.cmu.edu
+-->
 </body>
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
